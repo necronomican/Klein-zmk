@@ -3,7 +3,7 @@
 
 &xiao_serial { status = "disabled"; };
 
-&corne_xiao_6col_layout {
+&corne_xiao_5col_layout {
     transform = <&default_transform>;
 };
 
