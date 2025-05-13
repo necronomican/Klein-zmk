@@ -48,13 +48,12 @@
         nav_layer {
 
             bindings = <
-&trans         &trans         &trans         &trans        &trans              &kp PG_UP   &trans     &kp UP      &kp HOME     &trans
+&trans         &trans         &trans         &trans        &trans              &kp PG_UP   &trans     &kp UP_ARROW      &kp HOME     &trans
 &trans         &kp LALT       &kp LCTRL      &kp LGUI      &trans              &kp PG_DN   &kp LEFT   &kp DOWN    &kp RIGHT    &trans
 &trans         &trans         &trans         &kp CAPSLOCK  &trans              &kp INSERT  &kp HOME   &kp END     &trans       &trans
 &trans         &trans         &trans         &bootloader                                       &bt BT_NXT     &kp RET        &kp BKSP       &kp DEL
             >;
-        sensor-bindings = 
-            <&inc_dec_kp LC(LG(DOWN)) LC(LG(UP)) &inc_dec_kp LS(LG(DOWN)) LS(LG(UP))>;
+        sensor-bindings = <&inc_dec_kp LCTRL(LGUI(DOWN_ARROW)) LCTRL(LGUI(UP_ARROW)) &inc_dec_kp LSHFT(LGUI(DOWN_ARROW)) LSHFT(LGUI(UP_ARROW))>;
         };
 
         num_layer {
