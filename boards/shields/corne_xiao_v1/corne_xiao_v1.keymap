@@ -53,7 +53,9 @@
 &trans         &trans         &trans         &kp CAPSLOCK  &trans              &kp INSERT  &kp HOME   &kp END     &trans       &trans
 &trans         &trans         &trans         &bootloader                                       &bt BT_NXT     &kp RET        &kp BKSP       &kp DEL
             >;
-        sensor-bindings = <&inc_dec_kp LC(LG(DOWN)) LC(LG(UP))>, <&inc_dec_kp LS(LG(DOWN)) LS(LG(UP))>;
+        sensor-bindings = 
+            <&inc_dec_kp LC(LG(DOWN)) LC(LG(UP)),
+            &inc_dec_kp LS(LG(DOWN)) LS(LG(UP))>;
         };
 
         num_layer {
