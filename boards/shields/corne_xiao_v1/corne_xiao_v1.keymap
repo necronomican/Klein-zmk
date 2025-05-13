@@ -26,6 +26,25 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_sdf_enter {
+            timeout-ms = <50>;
+            key-positions = <11 12 13>; // S, D, F
+            bindings = <&kp TAB>;
+        };
+        combo_jkl_tab {
+            timeout-ms = <50>;
+            key-positions = <16 17 18>; // J, K, L
+            bindings = <&kp RET>;
+        };
+        combo_we_esc {
+            timeout-ms = <50>;
+            key-positions = <1 2>; // W, E
+            bindings = <&kp ESC>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
