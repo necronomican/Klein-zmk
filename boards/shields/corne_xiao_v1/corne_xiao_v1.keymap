@@ -25,26 +25,7 @@
   tapping-term-ms = <180>;
 };
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_sdf_tab {
-            timeout-ms = <50>;
-            key-positions = <11 12 13>; // S, D, F
-            bindings = <&kp TAB>;
-        };
-        combo_jkl_enter {
-            timeout-ms = <50>;
-            key-positions = <16 17 18>; // J, K, L
-            bindings = <&kp RET>;
-        };
-        combo_we_esc {
-            timeout-ms = <50>;
-            key-positions = <1 2>; // W, E
-            bindings = <&kp ESC>;
-        };
-    };
-
+/
     keymap {
         compatible = "zmk,keymap";
 
@@ -57,7 +38,7 @@
 
             bindings = <
 &kp Q          &kp W          &kp E          &kp R          &kp T               &kp Y          &kp U          &kp I          &kp O          &kp P
-&kp A     &mt LALT S     &mt LCTRL D    &mt LGUI F    &kp G                     &kp H          &mt RGUI J     &mt RCTRL K    &mt RALT L     &kp SQT
+&kp A          &mt LALT S     &mt LCTRL D    &mt LGUI F      &kp G               &kp H          &mt RGUI J     &mt RCTRL K    &mt RALT L     &kp SQT
 &kp Z          &kp X          &kp C          &kp V          &kp B               &kp N          &kp M          &kp COMMA      &kp DOT        &kp FSLH
 &lt MEDIA DEL  &lt NAV RET    &lt BLU LRHFT   &bootloader                                      &kp K_MUTE     &lt SYM RSHFT    &lt NUM SPACE   &lt FUN BKSP
             >;
