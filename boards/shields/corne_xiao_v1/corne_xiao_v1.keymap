@@ -26,6 +26,15 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_jkl_enter {
+            timeout-ms = <50>;
+            key-positions = <16 17 18>;
+            bindings = <&kp ENTER>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -47,9 +56,9 @@
         nav_layer {
 
             bindings = <
-&trans         &trans         &trans         &trans        &trans              &kp PG_UP   &trans     &kp UP_ARROW      &kp HOME     &trans
+&trans         &trans         &trans         &trans        &trans              &kp PG_UP   &kp HOME     &kp UP_ARROW      &trans     &trans
 &trans         &kp LALT       &kp LCTRL      &kp LGUI      &trans              &kp PG_DN   &kp LEFT   &kp DOWN    &kp RIGHT    &trans
-&trans         &trans         &trans         &kp CAPSLOCK  &trans              &kp INSERT  &kp HOME   &kp END     &trans       &trans
+&trans         &trans         &trans         &kp CAPSLOCK  &trans              &kp INSERT  &kp END   &trans     &trans       &trans
 &trans         &trans         &trans         &bootloader                                       &bt BT_NXT     &kp RET        &kp BKSP       &kp DEL
             >;
         sensor-bindings = <&inc_dec_kp LC(LG(DOWN_ARROW)) LC(LG(UP_ARROW)) &inc_dec_kp LS(LG(DOWN_ARROW)) LS(LG(UP_ARROW))>;
@@ -96,7 +105,7 @@
 &trans         &trans         &trans         &trans         &trans              &trans         &trans         &trans         &trans         &trans
 &trans         &trans         &trans         &bootloader                                       &bootloader    &kp K_STOP2    &kp K_PP       &kp K_MUTE
             >;
-        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
         };
 
         blu_layer {
