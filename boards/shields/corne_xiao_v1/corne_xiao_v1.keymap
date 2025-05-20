@@ -59,9 +59,9 @@
 
             bindings = <
 &kp Q          &kp W          &kp E          &kp R          &kp T               &kp Y          &kp U          &kp I          &kp O          &kp P
-&kp A     &mt LALT S     &mt LCTRL D    &mt LSHFT F    &kp G               &kp H          &mt RSHFT J    &mt RCTRL K    &mt RALT L     &kp SQT
+&lt LGUI A     &lt LALT S     &lt LCTRL D    &lt LSHFT F    &kp G               &kp H          &lt RSHFT J    &lt RCTRL K    &lt RALT L     &lt RGUI SQT
 &kp Z          &kp X          &kp C          &kp V          &kp B               &kp N          &kp M          &kp COMMA      &kp DOT        &kp FSLH
-&lt MEDIA DEL  &lt NAV ENTER  &lt BLU LSHIFT    &bootloader                                       &kp K_MUTE     &lt SYM RSHIFT    &lt NUM SPACE   &lt FUN BKSP            >;
+&lt MEDIA DEL  &lt NAV BKSP  &lt BLU LSHIFT    &bootloader                                       &kp K_MUTE     &lt SYM RSHIFT    &lt NUM SPACE   &lt FUN DEL            >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LC(LG(DOWN_ARROW)) LC(LG(UP_ARROW))>;
         };
 
