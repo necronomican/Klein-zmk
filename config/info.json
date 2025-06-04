@@ -1,5 +1,19 @@
 {
   "keyboard_name": "corne_xiao_v1",
+  "encoder": {
+    "rotary": [
+      {
+        "pin_a": "D5",
+        "pin_b": "D4",
+        "resolution": 4
+      },
+      {
+        "pin_a": "D4",
+        "pin_b": "D5",
+        "resolution": 4
+      }
+    ]
+  },
   "layouts": {
     "LAYOUT": {
       "layout": [
