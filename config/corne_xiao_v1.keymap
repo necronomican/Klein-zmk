@@ -125,7 +125,7 @@
 &trans  &kp LG(LS(LEFT))  &kp LS(LG(RIGHT))  &kp LG(LC(UP))        &kp LC(LG(DOWN))  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
 &trans  &trans            &trans             &trans                &trans            &kp RG(M)  &trans    &trans    &trans     &kp LG(SLASH)
                           &trans             &trans                &trans  &bootloader    &kp K_MUTE        &trans     &trans    &trans >;
-                    sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LC(LG(DOWN_ARROW)) LC(LG(UP_ARROW))>;
+                    sensor-bindings = <&inc_dec_kp LS(LG(LEFT)) LS(LG(RIGHT)) &inc_dec_kp LS(LG(DOWN_ARROW)) LS(LG(UP_ARROW))>;
         };
 
         num_layer {
